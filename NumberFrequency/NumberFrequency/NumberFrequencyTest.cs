@@ -20,7 +20,6 @@ internal class NumberFrequencyTest
             // Extract all the numbers from this line.
             List<int> lineNumbers = line.Split([' '], StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
-                .Distinct()
                 .ToList();
 
             // If a number doesn't exist in the dictionary, add it with a count of 0, otherwise add 1 to the count.
